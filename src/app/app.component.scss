@@ -1,4 +1,4 @@
-@import "variables";
+@import "../styles/variables.scss";
 
 .main {
   height: 100vh;
@@ -36,5 +36,6 @@ nav {
 .container {
   height: calc(100% - $height-nav);
   margin: 0 10rem;
+  padding: 2rem;
   background-color: $color-thistle;
 }
