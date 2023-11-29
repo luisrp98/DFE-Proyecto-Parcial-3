@@ -3,9 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-sales',
   templateUrl: './sales.component.html',
-  styles: [
-  ]
+  styleUrls: ['./sales.component.scss'],
 })
 export class SalesComponent {
-
+  list: string[] = ['Producto A', 'Producto B', 'Producto C'];
 }
