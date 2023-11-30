@@ -20,12 +20,12 @@ export class SalesComponent implements OnInit {
     this.itemService.getAllItems().subscribe({
       next: (v) => v.forEach((item) => this.sales.push(item)),
       error: (err) => console.log(err),
-      complete: () => console.log('complete'),
     });
+    console.log(this.sales);
   }
 
-  getIdRow(sellName: string) {
-    this.shareIdService.setSellId(sellName);
-    console.log(sellName);
+  getIdRow(saleId: number) {
+    this.shareIdService.setSellId(saleId.toString());
+    console.log(saleId);
   }
 }
