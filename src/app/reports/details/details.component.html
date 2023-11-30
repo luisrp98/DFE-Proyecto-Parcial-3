@@ -1,1 +1,13 @@
-<p>{{ saleId }}</p>
+<h1>Detalles de la compra</h1>
+<p>ID: {{ saleId }}</p>
+<p>Fecha: {{ saleDate }}</p>
+<p>Total: {{ saleTotal }}</p>
+<h2>Items comprados</h2>
+<div class="item" *ngFor="let item of list; let i = index">
+  <h3>Item {{ i + 1 }}</h3>
+  <p>Titulo: {{ item.title }}</p>
+  <p>Plataforma: {{ item.plataform }}</p>
+  <p>Cantidad: {{ item.quantity }}</p>
+  <p>Precio Unitario: {{ item.PriceUnit }}</p>
+  <p>Precio Subtotal: {{ item.Subtotal }}</p>
+</div>

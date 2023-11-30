@@ -15,4 +15,8 @@ export class ItemService {
   getAllItems(): Observable<Sale[]> {
     return this.http.get<Sale[]>(this.apiUrl);
   }
+
+  getSpecificItem(saleId: string): Observable<Sale> {
+    return this.http.get<Sale>(this.apiUrl + `/${saleId}`);
+  }
 }

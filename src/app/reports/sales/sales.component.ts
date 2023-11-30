@@ -26,6 +26,5 @@ export class SalesComponent implements OnInit {
 
   getIdRow(saleId: number) {
     this.shareIdService.setSellId(saleId.toString());
-    console.log(saleId);
   }
 }

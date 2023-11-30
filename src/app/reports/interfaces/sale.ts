@@ -2,13 +2,13 @@ export interface Sale {
   id: number;
   date: string;
   total: number;
-  // items: ItemVendido[];
+  items: itemsInSale[];
 }
 
-interface ItemVendido {
-  titulo: string;
-  plataforma: string;
-  cantidad: number;
-  precioUnitario: number;
-  precioSubtotal: number;
+export interface itemsInSale {
+  title: string;
+  plataform: string;
+  quantity: number;
+  PriceUnit: number;
+  Subtotal: number;
 }
