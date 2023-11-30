@@ -1,12 +1,46 @@
-:host {
-  background-color: red;
-}
+@import "../../../styles/variables.scss";
 
 table {
   width: 100%;
+  border-collapse: collapse;
+
+  thead {
+    background-color: $color-rusty-red;
+  }
 
   thead,
   td {
     text-align: center;
+    padding: 10px;
+  }
+
+  tr {
+    border-bottom: 1px solid #ddd;
+
+    &:hover {
+      background-color: $color-transparent-rusty-red;
+    }
+
+    td {
+      &:hover {
+        background-color: $color-transparent-beige;
+      }
+    }
   }
 }
+
+// Estilos para las celdas de encabezado
+
+// thead td {
+//   padding: 10px;
+//   font-weight: bold;
+//   text-align: left;
+// }
+
+// Estilos para las filas de datos
+
+// tr:last-child {
+//   border-bottom: none;
+// }
+
+// Estilos para las celdas de datos
