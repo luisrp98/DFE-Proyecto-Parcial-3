@@ -19,4 +19,8 @@ export class SalesComponent implements OnInit {
       complete: () => console.log('complete'),
     });
   }
+
+  getIdRow(sellName: string) {
+    alert(sellName);
+  }
 }
